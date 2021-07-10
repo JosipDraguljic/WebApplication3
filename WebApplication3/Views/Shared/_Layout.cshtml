@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/me.ico" />
+</head>
+<body>
+    <div id="particles-js">
+        <div id="test">
+            <a id="intro" class="headline">Hello, I'm <span style="color:red;">Josip Draguljic</span>.<br /> I'm a software developer<br /></a>
+            <a href="#about_me_part" class="button">View My Work here</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm sticky-top border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="nav-link text-light" href="#">Intro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about_me_part">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#resume_part">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#projects_part">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="w3-row-padding w3-center">
+            <div class="w3-third" style="margin-left: -4px;"><a href="tel:+436764428715" target="_blank"><img class="imageLink" src="~/images/phone.png" />+43-676-4428715</a></div>
+            <div class="w3-third" style="margin-left: -18px;"><a href="https://join.skype.com/invite/z9jykt9LizFm" target="_blank"><img class="imageLink" src="~/images/skype.png" />Josip Draguljic</a></div>
+            <div class="w3-third" style="margin-left: 8px;"><a href="mailto:jdraguljic@gmail.com"><img class="imageLink" src="~/images/gmail.png" />jdraguljic@gmail.com</a></div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/particles.js"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/app.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

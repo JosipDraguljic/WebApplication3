@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>09f496d1-19d3-43ae-bacc-cf9f742210c5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Views\.well-known\pki-validation\23881F9E08BDA02AD678D49B96C392FD.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
