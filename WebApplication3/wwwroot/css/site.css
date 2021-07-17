@@ -317,8 +317,8 @@ a.button:hover
 }
 
     .timeline-content h3 {
-        font-size: 20px;
-        color: black!important;
+        font-size: 16px;
+        color: yellow!important;
         margin: 0 0 15px;
         text-transform: capitalize;
         font-weight: 500;
@@ -326,7 +326,7 @@ a.button:hover
 
     .timeline-content p {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         list-style: none;
         line-height: 22px;
@@ -338,6 +338,16 @@ a.button:hover
     padding-top: 20px;
     text-align: center;
     border-radius: 30px;
+}
+
+.timeline-item-skill {
+    background-color: #1c2f2f;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 30px;
+    color: grey!important;
+    font-size: 12px!important;
 }
 /*responsve*/
 @media(max-width: 767px) {
